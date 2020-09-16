@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>input/tokyo.html</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="layout.css">
+<style>
+</style>
+</head>
+<body>
+  <form action="tokyo.jsp" method="POST">
+<h2>CSS Layout Float</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="layout.html">London</a></li>
+      <li><a href="paris.html">Paris</a></li>
+      <li><a href="tokyo.html">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+ <fieldset>
+   <legend><h1>개인 정보 입력</h1></legend>
+   <p>아 이 디: <input type="text" name="id"></p>
+   <p>생년월일: <input type=text" name="birth" value="연도-월-일"></p>
+   <p>성 별: <input type="radio" name="sex" value="male" checked>남성
+    <input type="radio" name="sex" value="male" checked>여성</p>
+  <p>E-mail: <input type="text" name="email"></p>
+  <p>메일수신: <input type="radio" name="acmail" checked>수신동의
+              <input type="radio" name="nomail">수신거부</p>
+  <p>핸드폰: <select>
+      <option selected>010 </option>
+      <option>011</option>
+      <option>017</option>
+      <option>016</option>
+  </select> - <input type="text" name="phone1"> - <input type="text" name="phone2"></p>
+  <p>직업: <select>
+    <option selected>학생</option>
+    <option>직장인</option>
+    <option>무직</option>
+    <option>대통령</option> 
+  </select>
+  </p>
+  <p>취미: <input type="checkbox" name="sub" value="쇼핑">쇼핑
+    <input type="checkbox" name="sub" value="인터넷">인터넷
+    <input type="checkbox" name="sub" value="음악감상">음악감상
+    <input type="checkbox" name="sub" value="독서">독서
+    <input type="checkbox" name="sub" value="스포츠">스포츠
+  </p>
+  <p>자기소개: <textarea name="pro" row="5" cols="50"></textarea></p>
+  <input type="submit" value="회원가입">
+  <input type="reset" value="재작성">
+</fieldset>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+</form>
+</body>
+</html>

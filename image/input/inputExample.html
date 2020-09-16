@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input/inputExample.html</title>
+</head>
+<body>
+    <form action="page.jsp" method="POST">
+        <fieldset>
+            <legend>회원정보 입력</legend>
+        <p>아이디 : <input type="text" name="id" value="아이디를 입력해주세요"></p>
+        <p>비밀번호 : <input type="password" name="password" value="비밀번호를 입력해주세요" required></p>
+        <p>성별 : <input type="radio" name="sex" value="male" checked>남자
+            <input type="radio" name="sex" value="female" >여자</p>
+         <h3>회원가입 목적(중복체크 가능)</h3>
+         <input type="checkbox" name="subject" value="상품구매" checked>상품구매<br>
+         <input type="checkbox" name="subject" value="상품판매" >상품판매<br>
+         <input type="checkbox" name="subject" value="단순호기심" >단순호기심<br>
+        <p></p>
+    </fieldset>
+    <fieldset>
+        <legend>자기소개입력</legend>
+        <textarea rows="5" clos="50">자기소개를 입력해주세요.</textarea>
+        <p></p>
+    </fieldset>
+    <input type="submit" value="회원가입">
+    <input type="reset" value="재작성">
+    </form>
+</body>
+</html>
